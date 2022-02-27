@@ -5,4 +5,4 @@
 |-----------|-----------|
 |array-reverse|[read me challinge1 link](./javascript/js-array-reverse/README.md)|
 |array-insert-shift|[read me challinge2 link](./javascript/array-insert-shiftjs/README.md)|
-|array-binary-search|[read me challinge2 link](./javascript/array-binary-searchjs/README.MD)|
+|array-binary-search|[read me challinge3 link](./javascript/array-binary-searchjs/README.MD)|
