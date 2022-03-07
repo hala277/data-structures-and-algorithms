@@ -12,11 +12,11 @@ describe('test Linked List', () => {
     expect(true).toBeTruthy();
   });
 
-  it('Can successfully instantiate an empty linked list',() => {
-   const ll = new LinkedLilst();
-  //  expect(ll).toBeInstanceOf(LinkedLilst);
-   expect(ll).toBeDefined();
-   expect(ll.head).toBeNull();
+  it('Can successfully instantiate an empty linked list', () => {
+    const ll = new LinkedLilst();
+    //  expect(ll).toBeInstanceOf(LinkedLilst);
+    expect(ll).toBeDefined();
+    expect(ll.head).toBeNull();
   })
 
 });
@@ -25,49 +25,127 @@ describe('test Linked List', () => {
 describe('The head property will properly point to the first node in the linked list', () => {
 
   it('Can properly insert into the linked list', () => {
-    const ll = new LinkedLilst(); 
+    const ll = new LinkedLilst();
     ll.insert(1);
     expect(ll.head.value).toEqual(1);
     expect(ll.head.next).toBeNull();
-    
+
   })
 
   it('Can properly insert multiple nodes into the linked list', () => {
-   
-    const ll = new LinkedLilst(); 
+
+    const ll = new LinkedLilst();
     ll.insert(1);
     ll.insert(2);
     expect(ll.head.value).toEqual(2);
     expect(ll.head.next.value).toBe(1);
-    
+
   })
 })
 
 describe('return true,false thing', () => {
-it('return true when finding a value within the linked list that exists',() => {
-let ll = new LinkedLilst();
-ll.insert(1);
-ll.insert(2);
-ll.insert(3);
-ll.insert(4);
-expect(ll.includes(4)).toBe(true);
-})
+  it('return true when finding a value within the linked list that exists', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+    expect(ll.includes(4)).toBe(true);
+  })
 
-it('return false when searching for a value in the linked list that does not exist',() => {
-  let ll = new LinkedLilst();
-  ll.insert(1);
-  ll.insert(2);
-  ll.insert(3);
-  ll.insert(4);
-  expect(ll.includes(5)).toBe(false);
-})
+  it('return false when searching for a value in the linked list that does not exist', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+    expect(ll.includes(5)).toBe(false);
+  })
 
-it('return a collection of all the values that exist in the linked list',() => {
-  let ll = new LinkedLilst();
-  ll.insert('a');
-  ll.insert('b');
-  ll.insert('c');
-  expect(ll.toString()).toBe("{ c }->{ b }->{ a }->NULL");
+  it('return a collection of all the values that exist in the linked list', () => {
+    let ll = new LinkedLilst();
+    ll.insert('a');
+    ll.insert('b');
+    ll.insert('c');
+    expect(ll.toString()).toBe("{ c }->{ b }->{ a }->NULL");
+  })
+
+
+
 })
+// linked-list-insertions
+describe('test linked-list-insertions', () => {
+  it('Can successfully add a node to the end of the linked list', () => {
+    const ll = new LinkedLilst();
+    ll.append(1);
+    expect(ll.head.value).toEqual(1);
+    expect(ll.head.next).toBeNull();
+
+  })
+
+  it('Can successfully add multiple nodes to the end of a linked list', () => {
+
+    const ll = new LinkedLilst();
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+
+    expect(ll.head.value).toEqual(1);
+    expect(ll.head.next.value).toEqual(2);
+    expect(ll.head.next.next.value).toEqual(3);
+    expect(ll.head.next.next.next).toBeNull();
+
+
+
+  })
+  it('Can successfully insert a node before a node located i the middle of a linked list', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    
+    
+    ll.insertBefore(3,10);
+    let newValue = ll.toString();
+
+    expect(newValue).toEqual("{ 10 }->{ 3 }->{ 2 }->{ 1 }->NULL");
+
+  })
+
+  it('Can successfully insert a node before the first node of a linked list', () => {
+
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+
+    ll.insertBefore(4,10);
+    let newValue = ll.toString();
+    expect(newValue).toEqual("{ 10 }->{ 4 }->{ 3 }->{ 2 }->{ 1 }->NULL")
+
+  })
+
+  it('Can successfully insert after a node in the middle of the linked list', () => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insertAfter(2,10);
+    let newValue = ll.toString();
+    expect(newValue).toEqual("{ 3 }->{ 2 }->{ 10 }->{ 1 }->NULL")
+
+  })
+
+  it('Can successfully insert a node after the last node of the linked list',() => {
+    let ll = new LinkedLilst();
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insertAfter(1,10);
+    let newValue = ll.toString();
+    expect(newValue).toEqual("{ 3 }->{ 2 }->{ 1 }->{ 10 }->NULL")
+
+  })
 
 })
