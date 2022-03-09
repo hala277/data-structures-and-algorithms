@@ -8,3 +8,4 @@
 |array-binary-search|[read me challinge3 link](./javascript/array-binary-searchjs/README.MD)|
 |linked-list|[read me challinge5 link](./javascript/linked-list/README.md)|
 |linked-list-insertions|[read me challinge6 link](./javascript/linked-list/README.md)|
+|linked-list-kth|[read me challinge7 link](./javascript/linked-list/README.md)|
