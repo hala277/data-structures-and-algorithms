@@ -12,6 +12,10 @@
 2. insert before,take two arguments
 3. insert after,take two arguments
 
+## Challenge 7
+
+*add to the linked list kth from end function*
+
 ## Approach & Efficiency
 
 **Time Complexity:** 
@@ -24,7 +28,7 @@
 *O(n)*
 
 ## API
- *in my code there are three linked list methods:*
+ *in my code there are my linked list methods:*
 
  1. *insert: Adds a new node with that value to the head of the list with an O(1) Time performance.*
  2. *includes: Indicates whether that value exists as a Node’s value somewhere within the list.*
@@ -37,4 +41,10 @@
 
  6. *insert after: adds a new node with the given new value immediately after the first node that has the value specified*
 
+
+7. *kthFromEnd(k):Return the node’s value that is k places from the tail of the linked list.*
+  
+8. *kthFromthemiddle: return when k is not at the end, but somewhere in the middle of the linked list* 
+
  
+
