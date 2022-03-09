@@ -149,3 +149,54 @@ describe('test linked-list-insertions', () => {
   })
 
 })
+
+// test kthFromEnd(k)
+describe('test kthFromEnd(k)', () => {
+
+it('Where k is greater than the length of the linked list',() => {
+let ll = new LinkedLilst();
+ll.insert(1);
+ll.insert(2);
+ll.insert(3);
+ll.insert(4);
+
+expect(ll.kthFromEnd(5)).toEqual('K more than the list length')
+})
+
+it('Where k and the length of the list are the same',() => {
+  let ll = new LinkedLilst();
+ll.insert(1);
+ll.insert(2);
+ll.insert(3);
+ll.insert(4);
+expect(ll.kthFromEnd(4)).toEqual(4);
+})
+
+it('Where k is not a positive integer',() => {
+  let ll = new LinkedLilst();
+ll.insert(1);
+ll.insert(2);
+ll.insert(3);
+ll.insert(4);
+expect(ll.kthFromEnd(-1)).toEqual('k is not a positive integer');
+})
+
+it('Where the linked list is of a size 1',() => {
+  let ll = new LinkedLilst();
+ll.insert(1);
+expect(ll.kthFromEnd(1)).toEqual(1);
+
+})
+
+it('Happy Path where k is not at the end, but somewhere in the middle of the linked list',() => {
+let ll = new LinkedLilst();
+ll.insert(1);
+ll.insert(2);
+ll.insert(3);
+
+expect(ll.kthFromthemiddle(2)).toEqual('Happy Path');
+
+})
+
+
+})
