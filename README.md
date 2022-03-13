@@ -9,3 +9,4 @@
 |linked-list|[read me challinge5 link](./javascript/linked-list/README.md)|
 |linked-list-insertions|[read me challinge6 link](./javascript/linked-list/README.md)|
 |linked-list-kth|[read me challinge7 link](./javascript/linked-list/README.md)|
+|linked-list-zip|[read me challinge8 link](./javascript/linked-list/README.md)|
