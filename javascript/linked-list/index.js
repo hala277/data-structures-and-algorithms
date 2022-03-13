@@ -158,6 +158,25 @@ class LinkedList {
             return "Happy Path"
         }
     }
+
+
+    zipLists(list1, list2){
+        let newList = new LinkedList();
+
+        while(list1.head || list2.head){
+            if(list1.head){
+                newList.append(list1.head.value);
+                list1.head = list1.head.next; 
+            }
+             if(list2.head){
+                newList.append(list2.head.value);
+                list2.head = list2.head.next;
+            }
+            
+        }
+        return newList.toString();
+    }
+
 }
 
 
