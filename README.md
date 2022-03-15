@@ -10,3 +10,4 @@
 |linked-list-insertions|[read me challinge6 link](./javascript/linked-list/README.md)|
 |linked-list-kth|[read me challinge7 link](./javascript/linked-list/README.md)|
 |linked-list-zip|[read me challinge8 link](./javascript/linked-list/README.md)|
+|stack-and-queue|[read me challinge10 link](./javascript/stack-and-queue/README.md)|
