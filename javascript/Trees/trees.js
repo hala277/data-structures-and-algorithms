@@ -1,8 +1,8 @@
 'use strict';
 
 class Tree {
-    constructor() {
-        this.root = null;
+    constructor(root) {
+        this.root = root;
     }
 
 
