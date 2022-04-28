@@ -19,3 +19,4 @@
 |tree-breadth-first|[read me challinge17 link](./javascript/Trees/tree-breadth-first/README.md)|
 |tree-fizz-buzz|[read me challinge18 link](./javascript/Trees/tree-fizz-buzz/README.md)|
 |Insertion Sort|[read me challinge26 link](./javascript/InsertionSort/README.md)|
+|Merge Sort|[read me challinge27 link](./javascript/MergeSort/README.md)|
