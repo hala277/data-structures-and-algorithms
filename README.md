@@ -21,3 +21,4 @@
 |Insertion Sort|[read me challinge26 link](./javascript/InsertionSort/README.md)|
 |Merge Sort|[read me challinge27 link](./javascript/MergeSort/README.md)|
 |Quick Sort|[read me challinge28 link](./javascript/QuickSort/README.md)|
+|Hash Table|[read me challinge30 link](./javascript/Hashtable/README.md)|
