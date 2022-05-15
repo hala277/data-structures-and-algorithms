@@ -3,11 +3,11 @@ Hashtables are a type of data structure that uses key-value pairs to store data.
 
 ## Challenge
 Implement a Hashtable Class that have the  following methods:
-+ set
-+ get
-+ contains
-+ keys
-+ hash
++ set : space O(1) , Time O(1)
++ get : space O(1) , Time O(n)
++ contains : space O(1) , Time O(1)
++ keys : space O(1) , Time O(1)
++ hash : space O(1) , Time O(1)
 
 ## Approach & Efficiency
 + Time Complexity:
