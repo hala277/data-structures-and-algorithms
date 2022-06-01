@@ -4,7 +4,7 @@ Write breadth first function that takes node as an argement and return A collect
 
 
 ## Whiteboard Process
-![Whiteboard](./uml/whitebored36.jpg)
+![Whiteboard](./uml/challenge36Whitebored.jpg)
 
 ## Approach & Efficiency
 + Time Complexity: O(V+E), where V is the number of nodes and E is the number of edges.
